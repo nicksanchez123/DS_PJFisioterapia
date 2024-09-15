@@ -1,5 +1,6 @@
 /*funcionarios do bagui*/
 .funcionario{
+  width: 100%;
     background: linear-gradient(333deg, rgba(252,252,252,1) 0%, rgba(46,54,48,1) 32%, rgba(16,99,15,1) 73%);
     align-items: center;
     justify-content: center;
