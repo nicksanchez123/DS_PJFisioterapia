@@ -1,0 +1,102 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f1f1f1;
+}
+
+#regForm {
+    margin: 100px auto;
+    font-family: Raleway;
+    padding: 40px;
+    width: 70%;
+    min-width: 300px;
+    background: radial-gradient(circle, rgba(255, 255, 255, 1) 48%, rgba(21, 117, 45, 1) 91%, rgba(14, 199, 12, 1) 100%);
+    border-radius: 10px;
+}
+
+h1 {
+    text-align: center;
+}
+
+input,select, textarea {
+    padding: 10px;
+    width: 100%;
+    font-size: 17px;
+    font-family: Raleway;
+    border: 1px solid #aaaaaa;
+}
+/*inputs do cadastro*/
+input{
+    border: 0;
+    border-bottom: 2px solid rgb(17, 17, 17);
+    background: none;
+    padding: 5px 20px; 
+  }
+  input:hover{
+    background:linear-gradient(124deg, rgba(255,255,255,1) 41%, rgba(117,240,116,1) 70%, rgb(3, 94, 21) 100%);
+    border-radius: 5px;
+    transition: 0.8s;
+    -webkit-transition: 0.8s;
+    box-shadow: 4px 4px 5px rgb(3, 94, 21);
+    border-bottom: hidden;
+  }
+  input:focus{
+    border: none;
+    box-shadow:4px 4px 5px rgb(3, 94, 21);
+    outline: 0;
+    border-radius: 5px;
+    border-bottom: hidden;
+    background-color: #dcdbddf5;
+    background: linear-gradient(124deg, rgba(255,255,255,1) 41%, rgba(117,240,116,1) 90%, rgb(3, 94, 21) 100%);
+  }
+  
+/* Mark input boxes that gets an error on validation: */
+input.invalid {
+    background-color: #ffdddd;
+}
+
+/* Hide all steps by default: */
+.tab {
+    display: none;
+}
+
+button {
+    background-color: #04AA6D;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 17px;
+    font-family: Raleway;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+#prevBtn {
+    background-color: #bbbbbb;
+}
+
+/* Make circles that indicate the steps of the form: */
+.step {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbbbbb;
+    border: none;
+    border-radius: 50%;
+    display: inline-block;
+    opacity: 0.5;
+}
+
+.step.active {
+    opacity: 1;
+}
+
+/* Mark the steps that are finished and valid: */
+.step.finish {
+    background-color: #04AA6D;
+}

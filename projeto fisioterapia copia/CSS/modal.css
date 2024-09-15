@@ -1,0 +1,56 @@
+.infos{
+    border: solid 2px;
+    display: block;
+    background: linear-gradient(143deg, rgb(94, 94, 94) 19%, rgba(9,121,12,1) 52%, rgb(31, 190, 6) 76%, rgba(255,255,255,1) 92%);
+    border-color: chartreuse;
+  }
+  
+  #container2{ 
+    width: 50%;
+    height: 100%;
+    border: solid 2px;
+    border-color: rgb(74, 145, 4);
+  }
+  /* The Modal (background) */
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.5); /* Black w/ opacity */
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #575454;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 15px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+    box-shadow: 5px 10px 10px rgb(114, 226, 2) ;
+    border-radius: 5px;
+  }
+  
+  /* The Close Button */
+  .close {
+    color: rgb(0, 0, 0);
+    float: right;
+    font-size: 30px;
+    font-weight: bold;
+  }
+  
+  .close:hover {
+    color: rgb(134, 2, 2);
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .modal-header {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+  }
+  
