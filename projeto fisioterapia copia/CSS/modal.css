@@ -7,7 +7,6 @@
 }
 
 .modal-body {
-  border: ;
   display: block;
   background: linear-gradient(143deg, rgb(94, 94, 94) 19%, rgba(9, 121, 12, 1) 52%, rgb(31, 190, 6) 76%, rgba(255, 255, 255, 1) 92%);
   border-color: chartreuse;
@@ -57,7 +56,7 @@
   /*Estiliza a sua largura*/
   border-style: solid;
   /* Estiliza seu estilo*/
-  border-color: rgb(114, 226, 2);/ *Estiliza sua cor*/ border-top: 5px solid rgb(114, 226, 2);
+  border-color: rgb(114, 226, 2); border-top: 5px solid rgb(114, 226, 2);/*Estiliza sua cor*/
   box-shadow: 5px 6px 10px rgb(114, 226, 2);
 }
 

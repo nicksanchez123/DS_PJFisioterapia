@@ -15,4 +15,9 @@ function MaisSobre() {
 
 }
 
-//funções para a parte de slideshow
+$(document).on('hidden.bs.modal',function(event){
+    if($('.modal:visible').lenght){
+     $('body').addClass('modal-open')
+    }
+   })
+   
