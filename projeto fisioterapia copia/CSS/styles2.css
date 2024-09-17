@@ -45,14 +45,17 @@ nav li{
   border-radius: 6px;
   padding: 10px;
 }
-
-nav a:hover {
-  background: radial-gradient(circle, rgba(21,117,45,1) 32%, rgba(14,199,12,1) 73%);;
-  color: rgb(255, 255, 255);
-  padding: 4px 2px;
+nav button{
+  background: none;
+  border: none;
+  color: #ffffff;
+}
+nav button:hover {
+  background-color: #cac9c9;
+  color: rgb(0, 0, 0);
   font-size: 14px;
-  transition: 0.4s;
-  border-radius: 5px;
+  transition: 0.7s;
+  border-radius: 4px;
 }
 #mais {
   display: none;
