@@ -11,7 +11,7 @@ body {
   .container {
     position: relative;
     border-radius: 5px;
-    background-color: #11690e79;
+    background-color: #32422cab;
     padding: 20px 0 30px 0;
     width: 50%;
     margin: 200px 350px;
@@ -109,11 +109,11 @@ body {
   /* bottom container */
   .bottom-container {
     text-align: center;
-    background-color: #666;
+    background-color: #454331;
     border-radius: 0px 0px 4px 4px;
     width: 50%;
     margin: -200px 350px;
-    border: solid 2px;
+    border: solid 1px;
 
   }
   
