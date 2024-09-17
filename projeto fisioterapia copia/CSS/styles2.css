@@ -114,8 +114,8 @@ section .air.air4 {
   bottom: 20px;
 }
 table {
-  background: #434444;
-  color: #cac9c9;
+  background: rgba(76, 221, 197, 0.815);
+  color: #000000;
   text-align: center;
   padding: 10px 0;
   bottom: 0;
