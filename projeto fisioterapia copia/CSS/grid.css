@@ -15,9 +15,9 @@
     margin-top: 30px;
   }
   .column{
-    --c: #0bea95; 
-    --b: 10px;   
-    --g: 5px;    
+    --c: #08f042; 
+    --b: 4px;   
+    --g: 4px;    
   padding: calc(var(--g) + var(--b));
     --_g: #0000 25%,var(--c) 0;
     background: 
