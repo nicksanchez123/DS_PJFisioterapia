@@ -41,18 +41,18 @@ nav li{
   width: 40%;
   margin-top: -120px;
   float: right;
-  background-color: #332c2c;
+  background-color: #ffffff;
   border-radius: 6px;
   padding: 10px;
 }
 nav button{
   background: none;
   border: none;
-  color: #ffffff;
+  color: #000000;
 }
 nav button:hover {
   background-color: #167025ce;
-  color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
   font-size: 14px;
   transition: 0.7s;
   border-radius: 4px;
@@ -67,7 +67,7 @@ section {
   position: relative;
   width: 100%;
   height: 30vh;
-  background: #434444;
+  background: #167025ce;
   overflow: hidden;
 }
 
@@ -79,6 +79,7 @@ section .air {
   height: 100px;
   background: url(https://1.bp.blogspot.com/-xQUc-TovqDk/XdxogmMqIRI/AAAAAAAACvI/AizpnE509UMGBcTiLJ58BC6iViPYGYQfQCLcBGAsYHQ/s1600/wave.png);
   background-size: 1000px 100px
+  
 }
 
 section .air.air1 {
@@ -102,7 +103,7 @@ section .air.air3 {
   z-index: 998;
   opacity: 0.2;
   animation-delay: -2s;
-  bottom: 15px;
+  bottom: 15px;              
 }
 
 section .air.air4 {
