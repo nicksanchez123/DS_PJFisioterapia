@@ -1,0 +1,16 @@
+.footer-row{
+    background: rgba(76, 221, 197, 0.815);
+    height: 100%;
+    width: 100%;
+}
+.coluna{
+    margin: -100px 500px;
+    padding-bottom: 100px;
+}
+.coluna a{
+ color:rgb(0, 0, 0);
+ display: flex;
+}
+.footer-row img{
+    width: 25%;
+}
