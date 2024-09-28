@@ -1,0 +1,56 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url(../imagens/bgform.png);
+}
+
+* {
+  box-sizing: border-box;
+}
+.container{
+  position: relative;
+  border-radius: 10px;
+  background-color: rgba(216, 216, 216, 0.295);
+  width: 50%;
+  height: 100%;
+  margin: 0px 500px;
+}
+.bottom-container{
+  background-color: rgba(78, 78, 78, 0.877);
+  height: 100%;
+  padding: 50px;
+    text-align: center;
+    background-color: #666;
+    border-radius: 0px 0px 4px 4px;
+
+}
+.form-content{
+  display: block;
+  width: 50%;
+  height: 100%;
+  margin: 200px 250px;
+  padding: 0px 20px;
+
+}
+input{
+  padding: 10px;
+  border-radius: 6px;
+  border: none;
+  display: flex;
+  width: 80%;
+  line-height: 20px;
+  margin: 10px 30px;
+}
+.google {
+  background-color: #dd4b39;
+  color: white;
+  text-decoration: none;
+  padding: 10px 80px;
+  border-radius: 5px;
+  margin-left: 50px;
+  margin-top: 10px;
+  width: 100%;
+}
+.col {
+  float: left;
+  width: 50%;
+}

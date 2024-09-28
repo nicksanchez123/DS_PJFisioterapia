@@ -1,16 +1,34 @@
 .footer-row{
     background: rgba(76, 221, 197, 0.815);
-    height: 100%;
+    height: 60%;
     width: 100%;
+    position: absolute;
 }
 .coluna{
-    margin: -100px 500px;
-    padding-bottom: 100px;
+    margin: -300px 700px;
+    display: block;
 }
 .coluna a{
  color:rgb(0, 0, 0);
  display: flex;
+ font-size: x-large;
+ text-decoration: none;
+ width: 50%;
+}
+.coluna a:hover{
+    transition: 0.7s;
+    text-decoration: underline;
+    color: azure;
 }
 .footer-row img{
     width: 25%;
+    filter: drop-shadow(0 0 10px rgb(23, 138, 29));
+}
+footer{
+    background-color: rgb(6, 110, 28);
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
 }
