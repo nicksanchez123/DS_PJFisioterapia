@@ -14,6 +14,9 @@ git commit -m "Nome da versão"
 git push -u origin main
 git push 
 
+4- caso não houver alterações o git pull irá atualizzar automaticamente
+senão, vc terá que refazer o passo 2 e 3
+
 BOA SORTE :)
 
 OREMOS
