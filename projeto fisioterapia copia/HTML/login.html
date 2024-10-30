@@ -13,30 +13,41 @@
 
 <body>
 	<div class="container">
-<form action="">
-	<div class="headerform">
-	<h2 style="margin: 100px 400px;">Login Form</h2>
-	</div>
-	<div class="form-content">
-		<input type="Email" name="Email" placeholder="Email">
-		<input type="password" name="password" placeholder="Password">
-		<input type="submit" value="login">
-		<a href="#" class="google btn"><i class="fa fa-google fa-fw">
-		</i> Login with Google+
-	  </a>
-	</div>
-	<div class="bottom-container">
-		<div class="row">
-			<div class="col">
-				<a href="#" style="color:white" class="btn">Sign up</a>
+		<div class="screen">
+			<div class="screen__content">
+				<form class="login">
+					<div class="login__field">
+						<i class="login__icon fa fa-user"></i>
+						<input type="text" class="login__input" placeholder="User name / Email">
+					</div>
+					<div class="login__field">
+						<i class="login__icon fa fa-lock"></i>
+						<input type="password" class="login__input" placeholder="Password">
+					</div>
+					<button class="button login__submit">
+						<span class="button__text">Log In Now</span>
+						<i class="button__icon fa fa-chevron-right"></i>
+					</button>				
+				</form>
+				<div class="social-login">
+					<h3>log in with</h3>
+					<div class="social-icons">
+						<a href="#" class="social-login__icon fa fa-instagram"></a>
+						<a href="#" class="social-login__icon fa fa-facebook"></a>
+						<a href="#" class="social-login__icon fa fa-google"></a>
+					</div>
+				</div>
+        <a href="#" class="sign_in">sign in</a>
+
 			</div>
-			<div class="col">
-				<a href="" style="color: white; "class="btn">Forgot password?</a>
-			</div>
+			<div class="screen__background">
+				<span class="screen__background__shape screen__background__shape4"></span>
+				<span class="screen__background__shape screen__background__shape3"></span>		
+				<span class="screen__background__shape screen__background__shape2"></span>
+				<span class="screen__background__shape screen__background__shape1"></span>
+			</div>		
 		</div>
 	</div>
-</form>
-</div>
 </body>
 
 </html>
