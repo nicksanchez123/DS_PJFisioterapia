@@ -1,219 +1,76 @@
-*{
-    margin: 0;
-    padding: 0%;
-    box-sizing: border-box;
+* {
+	margin: 0;
+	padding: 0%;
+	box-sizing: border-box;
 }
 
-body{
-    align-items: center;
-min-height: 100vh;
-background: #ec0505;
+body {
+	align-items: center;
+	min-height: 100vh;
+	background: #ec0505;
 
 }
 
-.map8ox{
-    width: 600px;
-    height: 500px;
-    background: #fff;
-    
+.map8ox {
+	width: 600px;
+	height: 500px;
+	background: #fff;
+
 }
 
-.map8ox iframe{
-    width: 600px;
-    height: 600px;
+.map8ox iframe {
+	width: 600px;
+	height: 600px;
 }
+
 @import url('https://fonts.googleapis.com/css?family=Raleway:400,700');
 
 * {
 	box-sizing: border-box;
 	margin: 0;
-	padding: 0;	
+	padding: 0;
 	font-family: Raleway, sans-serif;
 }
 
 body {
 	background-image: url(../imagens/bgform.png);
-  backdrop-filter: blur(3px);
+	backdrop-filter: blur(3px);
 }
 
-.container {
-	display: flex;
-	align-items: center;
-	justify-content: center;
+
+.grid {
+	display: grid;
+	grid-template-columns: repeat(1, 1fr);
+	grid-template-rows: repeat(2, 50%);
+	border-collapse: collapse;
 	min-height: 100vh;
 }
 
-.screen {		
-	background-color: #32422c;		
-	position: relative;	
-	height: 600px;
-	width: 420px;	
-	box-shadow: 0px 0px 24px #32422c;
+.grid-item {
+	outline: 1px solid rgb(203 213 225);
 }
 
-.screen__content {
-	z-index: 1;
-	position: relative;	
-	height: 100%;
-  margin-left: 60px;
-  
-}
-
-.screen__background {		
-	position: absolute;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	z-index: 0;
-	-webkit-clip-path: inset(0 0 0 0);
-	clip-path: inset(0 0 0 0);	
-}
-
-.screen__background__shape {
-	transform: rotate(45deg);
-	position: absolute;
-}
-
-.screen__background__shape1 {
-	height: 520px;
-	width: 520px;
-	background: #FFF;	
-	top: -50px;
-	right: 120px;	
-	border-radius: 0 72px 0 0;
-}
-
-.screen__background__shape2 {
-	height: 220px;
-	width: 220px;
-	background: #626a62;	
-	top: -172px;
-	right: 0;	
-	border-radius: 32px;
-}
-
-.screen__background__shape3 {
-	height: 540px;
-	width: 190px;
-	background-color: #4e723e;
-	top: -24px;
-	right: 0;	
-	border-radius: 32px;
-}
-
-.screen__background__shape4 {
-	height: 400px;
-	width: 200px;
-	background: #4e723e;	
-	top: 420px;
-	right: 50px;	
-	border-radius: 60px;
-}
-
-.login {
-	width: 320px;
-	padding: 30px;
-	padding-top: 130px;
-}
-.login img{
-	width: 220px;
-	margin: -80px 20px;
-padding: 0px 10px;
-}
-.login__field {
-	padding: 20px 0px;	
-	position: relative;	
-}
-
-.login__icon {
-	position: absolute;
-	top: 30px;
-	color: #4e723e;
-}
-
-.login__input {
-	border: none;
-	border-bottom: 2px solid #D1D1D4;
-	background: none;
-	padding: 10px;
-	padding-left: 24px;
-	font-weight: 700;
-	width: 75%;
-	transition: .2s;
-}
-
-.login__input:active,
-.login__input:focus,
-.login__input:hover {
-	outline: none;
-	border-bottom-color: #4e723e;
-}
-
-.login__submit {
-	background: #fff;
-	font-size: 14px;
-	margin-top: 30px;
-	padding: 16px 20px;
-	border-radius: 26px;
-	border: 2px solid #f0f0f0;
-	text-transform: uppercase;
-	font-weight: 700;
-	display: flex;
-	align-items: center;
+.container{
+	display: grid;
+	grid-template-columns: repeat(2,1fr);
+	grid-template-rows: repeat(2,100%);
+	background-color: #043d02da;
 	width: 100%;
-	color: #4e723e;
-	box-shadow: 0px 2px 2px #32422c;
-	cursor: pointer;
-	transition: .2s;
+	height: 100%;
 }
-
-.login__submit:active,
-.login__submit:focus,
-.login__submit:hover {
-	border-color: #32422c;
-	outline: none;
+.faleConosco{
+	background-color: rgba(0, 0, 0, 0.493);
+	width: 100%;
+	height: 100%;
 }
-
-.button__icon {
-	font-size: 24px;
-	margin-left: auto;
-	color: #4e723e;
-}
-
-.social-login {	
-	position: absolute;
-	height: 140px;
-	width: 160px;
-	text-align: center;
-	bottom: 0px;
-	right: 0px;
-	color: #fff;
-}
-
-.social-icons {
-	display: flex;
-	align-items: center;
+.saq{
 	justify-content: center;
+	align-items: center;
+	width: 50%;
+	height: 50%;
+	padding: 20px 25px;
+	margin: 100px 200px;
 }
-
-.social-login__icon {
-	padding: 20px 10px;
-	color: #fff;
-	text-decoration: none;	
-	text-shadow: 0px 0px 8px #7875B5;
-}
-.sign_in{
-  margin: 0 20px;
-  text-decoration: none ;
-  color: #4e723e;
-  font-size: large;
-}
-.sign_in:hover{
-  color:#32422c;
-  border-bottom: solid 2px #4e723e;
-}
-
-.social-login__icon:hover {
-	transform: scale(1.5);	
+.infosEmpresa{
+	padding: 15px 0px;
 }

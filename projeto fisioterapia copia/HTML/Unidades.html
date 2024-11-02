@@ -1,40 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../CSS/unidades.css">
-    <script src="../JS/java.js"></script>
-    <title>Unidades - GOOGLE MAPS</title>
-</head>
-<body>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d14630.206343834214!2d-46.40897914491566!3d-23.54862529010915!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e6!4m5!1s0x94ce65a6d27651f7%3A0xb4c08f8f03028bf1!2sR.%20Pedro%20da%20Silveira%20-%20Jardins%20Recanto%20das%20Rosas%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2008461-430!3m2!1d-23.558064899999998!2d-46.4033332!4m5!1s0x94ce64fd9d936de3%3A0xe92c07629d8ae16a!2sR.%20Gaspar%20Dias%20de%20Ata%C3%ADde%20-%20Lageado%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2008451-430!3m2!1d-23.5396388!2d-46.393555299999996!5e0!3m2!1spt-BR!2sbr!4v1730415329512!5m2!1spt-BR!2sbr" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    <div class="container">
 
-        <div class="screen">
-            <div class="screen__content">
-                <form class="login">
-                    <img src="../imagens/logo.png" alt="">
-					<div class="login__field">
-                        <i class="login__icon fa fa-user"></i>
-						<input type="text" class="login__input" placeholder="User name / Email">
-					</div>
-					<div class="login__field">
-                        <i class="login__icon fa fa-lock"></i>
-						<input type="password" class="login__input" placeholder="Password">
-					</div>
-					<button class="button login__submit" onclick="getLocation()">
-						<span class="button__text">Log In Now</span>
-						<i class="button__icon fa fa-chevron-right"></i>
-					</button>				
-                    <div>
-                        <button onclick="getLocation()">Try It</button>
-                    </div>
-				</form>
-                
-                <p id="demo"></p>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../CSS/unidades.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="../JS/java.js"></script>
+  <title>Unidades - GOOGLE MAPS</title>
+</head>
+
+<body>
+  <div class="grid">
+    <div class="grid-item">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d14630.206343834214!2d-46.40897914491566!3d-23.54862529010915!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e6!4m5!1s0x94ce65a6d27651f7%3A0xb4c08f8f03028bf1!2sR.%20Pedro%20da%20Silveira%20-%20Jardins%20Recanto%20das%20Rosas%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2008461-430!3m2!1d-23.558064899999998!2d-46.4033332!4m5!1s0x94ce64fd9d936de3%3A0xe92c07629d8ae16a!2sR.%20Gaspar%20Dias%20de%20Ata%C3%ADde%20-%20Lageado%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2008451-430!3m2!1d-23.5396388!2d-46.393555299999996!5e0!3m2!1spt-BR!2sbr!4v1730415329512!5m2!1spt-BR!2sbr"
+        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <div class="grid-item" style="background-color: aliceblue;">
+      <div class="container">
+        <div class="faleConosco">
+          <div class="saq">
+            <div class="infos">
+              <div class="infosEmpresa">
+            <i class="fa fa-envelope" style="font-size: xx-large;"></i>
+            <span>EMAIL: lalalalal@gmail.com</span>
+          </div>
+            <div class="infosEmpresa">
+            <i class="fa fa-phone" style="font-size: xx-large;"></i>
+            <span>TEL: 40028-922</span>
+          </div>
+            <div class="infosEmpresa">
+            <i class="fa fa-whatsapp" style="font-size: xx-large;"></i>
+            <span>+55 (11) 68659-234</span>
+          </div>
         </div>
-            </body>
-            </html>
+
+         <div>
+           <button onclick="getLocation()">Try It</button>
+         </div>
+          </div>
         </div>
+      </div>
+
+    </div>
+</body>
+
+</html>
