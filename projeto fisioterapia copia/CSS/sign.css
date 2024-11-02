@@ -32,6 +32,7 @@ body {
 	position: relative;	
 	height: 100%;
   margin-left: 60px;
+  margin: -50px 50px;
 }
 
 .screen__background {		
@@ -115,7 +116,7 @@ padding: 0px 10px;
 	padding: 10px;
 	padding-left: 24px;
 	font-weight: 700;
-	width: 75%;
+	width: 80%;
 	transition: .2s;
 }
 
