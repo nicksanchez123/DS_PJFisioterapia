@@ -15,40 +15,40 @@
       <form action="" class="formAgendamento">
         <h2>Formulario de Agendamento</h2>
         <div class="nome">
-          <h6>Nome</h6>
-          <input placeholder="primeiro nome" type="text" required> <input placeholder="sobrenome" type="text" required>
+          <h6>Nome:</h6>
+          <input placeholder="primeiro nome"  type="text" required> <input placeholder="sobrenome" type="text" required>
         </div>
         <br>
         <div class="nascimento">
-          <h6>Data de Nascimento</h6>
-          <input type="date" min="1954-01-01" required>
+          <h6>Data de Nascimento:</h6>
+          <input type="text" id="calendar" placeholder="Select a date" min="1954-01-01">
         </div>
         <br>
         <div class="cpf">
-          <h6>CPF</h6>
-          <input placeholder="cpf" type="text" required>
+          <h6>CPF:</h6>
+          <input placeholder="CPF" type="text" maxlength="11" required>
         </div>
         <br>
         <div class="sexo">
-          <h6>Telefone</h6>
-          <input type="tel" placeholder="(00)00000-0000" pattern="[0-9]{2}-[0-9]{5}-[0-9]{4}" required>
-          <h6> Sexo</h6>
-          <select name="" id="">
-            <option value="">masculino</option>
-            <option value="">feminino</option>
+          <h6>Telefone:</h6>
+          <input type="tel" placeholder="00-00000-0000" pattern="[0-9]{2}-[0-9]{5}-[0-9]{4}" required>
+          <h6> Sexo:</h6>
+          <select name="sexo" id="sexo">
+            <option value="masculino">Masculino</option>
+            <option value="feminino">Feminino</option>
           </select>
         </div>
         <br>
         <div class="endereco">
-          <h5>Endereço</h5>
-          <input required placeholder="Endereço" type="text">
-          <input required placeholder="CEP" type="text" pattern="[0-8]{4}-[0-8]{4}">
+          <h5>Endereço:</h5>
+          <input required placeholder="CEP" type="text" maxlength="9">
+          <input required placeholder="Rua" type="text" >
           <input required placeholder="Bairro" type="text"> 
           <input required placeholder="Estado" type="text">
         </div>
         <br>
         <div class="email">
-          <h5>Digite seu Email</h5>
+          <h5>Digite seu Email:</h5>
           <input required placeholder="Email" type="text">
         </div>
         <br>
@@ -59,7 +59,7 @@
         </div>
         <br>
         <div class="selectUnidade">
-          <h5>Escolha a Unidade</h5>
+          <h5>Escolha a Unidade:</h5>
           <select name="unidades" class="unidades" required>
             <option value="Unidades">Unidades</option>
             <option value="sao miguel">São Miguel</option>
@@ -72,7 +72,7 @@
         </div>
         <br>
         <div class="motivo">
-          <h5>Motivo da consulta</h5>
+          <h5>Motivo da consulta:</h5>
           <select name="" id="" required>
             <option value="">Exame Médico</option>
             <option value="">Checagem</option>
@@ -80,8 +80,10 @@
           </select>
         </div>
         <br>
-        <input type="text" id="calendar" placeholder="Select a date">
+        <h5>Data de Preferência:</h5>
+        <input type="text" id="calendar" placeholder="Select a date" min="1954-01-01">
         <div class="horarios">
+          <h5>Horário:</h5>
           <div class="grid">
             <div class="grid_item">
               <button class="time-input">09:00</button>
@@ -105,17 +107,13 @@
     </div>
   </div>
   <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
-<script>
-  // Inicializa o Flatpickr no input
+<script src="../JS/cep.js" async></script>
+<script>  // Inicializa o Flatpickr no input
   flatpickr("#calendar", {
     dateFormat: "m/d/Y",
     allowInput: true,
-    locale: {
-      firstDayOfWeek: 1 // Começa na segunda-feira
-    }
   });
 </script>
-
 </body>
 
 </html>
