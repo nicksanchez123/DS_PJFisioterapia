@@ -34,5 +34,9 @@ function showPosition(position) {
   x.innerHTML = "Latitude: " + position.coords.latitude + 
   "<br>Longitude: " + position.coords.longitude;
 }
-
+  // Inicializa o Flatpickr no input
+  flatpickr("#calendar", {
+    dateFormat: "m/d/Y",
+    allowInput: true,
+  });
    
