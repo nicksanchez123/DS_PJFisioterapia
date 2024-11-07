@@ -1,5 +1,4 @@
 * {
-  /*ajusta o site ficar um embaixo do outro*/
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -8,6 +7,7 @@
 body {
   background-image: url(../imagens/bgform.png);
   backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px); /* Safari */
 }
 
 .container {
@@ -17,42 +17,85 @@ body {
 
 .formAgendamento {
   position: relative;
-  background-color: rgba(0, 255, 255, 0.664);
-  width: 65%;
-  height: 130%;
+  background: radial-gradient(circle, rgba(255,255,255,1) 5%, rgba(68,111,60,1) 77%, rgba(9,43,0,1) 100%);
+  width: 50%;
+  min-height: 100%; /* Ajuste para não ultrapassar a altura da tela */
   margin-left: 25%;
   align-items: center;
   justify-content: center;
-  padding: 20px 40px;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  padding: 20px 50px;
+  font-family: 'Lucida Sans', sans-serif;
   font-size: large;
+  box-sizing: border-box; /* Para incluir o padding no cálculo da largura */
 }
 
-.screen_content {
-  align-items: center;
-  justify-content: center;
-  margin-left: 15%;
-  height: 75%;
-  width: 60%;
-  padding: 0px 50px;
+/* Responsividade */
+@media (max-width: 1200px) {
+  .formAgendamento {
+    width: 80%;
+    margin-left: 10%;
+  }
 }
 
-.endereco input {
-  margin: 10px 0px;
+@media (max-width: 992px) {
+  .formAgendamento {
+    width: 90%;
+    margin-left: 5%;
+  }
 }
 
-.questão input[type=radio] {
-  cursor: pointer;
-  margin-top: 20px;
-  width: 40px;
-  height: 20px;
+@media (max-width: 768px) {
+  .formAgendamento {
+    width: 95%;
+    margin-left: 2.5%;
+    font-size: medium;
+    padding: 15px;
+  }
+
+  .screen_content {
+    width: 100%;
+    margin-left: 0;
+    padding: 0 20px;
+  }
+
+  .grid {
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  }
 }
 
-.horarios {
-  padding: 30px 30px;
-  margin: -110px 350px;
+@media (max-width: 480px) {
+  .formAgendamento {
+    width: 100%;
+    margin-left: 0;
+    font-size: small;
+    padding: 10px;
+  }
+
+  .screen_content {
+    width: 100%;
+    padding: 0 10px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+  }
+
+  .time-input {
+    width: 70px;
+    font-size: 14px;
+  }
+
+  input[type="text"] {
+    width: 200px;
+  }
+
+  #sexo {
+    width: 80px;
+  }
 }
 
+/* Estilos específicos para o layout da grid */
 .grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -61,7 +104,6 @@ body {
   row-gap: 10px;
 }
 
-/* Estilo dos inputs */
 .time-input {
   width: 80px;
   padding: 5px;
@@ -75,13 +117,11 @@ body {
   transition: background-color 0.2s, color 0.2s;
 }
 
-/* Efeito de hover */
 .time-input:hover {
   background-color: #01b159;
   color: #fff;
 }
 
-/* Efeito de foco */
 .time-input:focus {
   outline: none;
   box-shadow: 0 0 5px #4a90e2;
@@ -89,30 +129,31 @@ body {
 
 input[type=text] {
   border-radius: 2px;
-  padding: 5px 0px;
+  padding: 10px 0px;
   background: none;
   width: 220px;
   border: none;
-  border-bottom: 2px solid #018629;
+  border-bottom: 2px solid #000000;
 }
-
+  input::placeholder{
+    color: #0a0a0a;
+  }
 input[type=text]:focus {
   outline: none;
   border: none;
   border-bottom: 2px solid #018629;
 }
 
-::-webkit-input-placeholder {
-  color: #0a0a0a;
-  font-size: medium;
-}
-
 input[type="text"]:focus::placeholder {
   color: transparent;
 }
+select{
+  border: none;
+  text-align: center;
+}
 .sexo input {
   border: none;
-  border-bottom: 2px solid #018629;
+  border-bottom: 2px solid #000000;
   background: none;
   padding: 5px 10px;
 }
@@ -123,22 +164,44 @@ input[type="text"]:focus::placeholder {
   outline: none;
 }
 
-.sexo input:focus::placeholder {
-  color: transparent;
-}
-
 #sexo {
   border: none;
-  border-bottom: 2px solid #018629;
+  border-bottom: 2px solid #000000;
   background: none;
   width: 100px;
   padding: 5px 5px;
 }
-#sexo:hover{
-  cursor:pointer;
+
+#sexo:hover {
+  cursor: pointer;
 }
-#sexo:focus{
+
+#sexo:focus {
   outline: none;
-  border:none;
+  border: none;
   border-bottom: 2px solid #018629;
+}
+
+/* Estilo para os inputs de sexo */
+#sexo {
+  width: 120px;
+}
+
+@media (max-width: 1200px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr); /* Reduzir para 3 colunas em telas menores */
+  }
+}
+
+@media (max-width: 992px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr); /* Ajuste para 2 colunas */
+  }
+}
+
+@media (max-width: 768px) {
+  /* Ajuste para 1 coluna na grid */
+  .grid {
+    grid-template-columns: 1fr;
+  }
 }
